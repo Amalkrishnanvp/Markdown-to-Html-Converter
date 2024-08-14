@@ -1,44 +1,42 @@
-<div class="container px-4">
+<div class="container px-4 pb-3 mx-auto">
   <div class="project mt-3">
 
     {{! Heading Section  }}
     <section id="heading-section">
       <div class="heading-div">
-        <h1 class="font-bold text-3xl text-center mb-5">{{heading}}</h1>
+        <h1 class="font-bold text-2xl lg:text-3xl text-center mb-7 md:mb-6">{{heading}}</h1>
       </div>
     </section>
 
     {{! Content Section  }}
     <section id="content-section">
-      <div class="holder flex justify-center gap-12">
-        <div class="left-container w-5/12">
+      <div class="holder flex justify-center gap-7 lg:gap-12 flex-col lg:flex-row">
+        <div class="left-container lg:w-5/12">
           <h3 class="font-semibold text-xl mb-2">Markdown:</h3>
           <textarea
             id="markdown-holder"
             class="border border-black h-96 outline-none resize-none py-1 px-2 rounded-sm w-full"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit, consequatur quod. Cumque blanditiis aliquid quia!
-            Maxime temporibus architecto voluptate ad, vel unde fugit at nulla
-            recusandae, minima vitae, magni quo.</textarea>
+          ></textarea>
         </div>
-        <div class="my-auto"><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="right-container w-5/12">
+        <div
+          class="mx-auto lg:my-auto lg:mx-0 rotate-90 lg:rotate-0 transition-transform"
+        ><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="right-container lg:w-5/12">
           <h3 class="font-semibold text-xl mb-2">HTML:</h3>
           <div
             id="html-shower"
-            class="border border-black h-96 outline-none resize-none py-1 px-2 rounded-sm w-full bg-white"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit, consequatur quod. Cumque blanditiis aliquid quia!
-            Maxime temporibus architecto voluptate ad, vel unde fugit at nulla
-            recusandae, minima vitae, magni quo.</div>
+            class="border border-black h-96 outline-none resize-none py-1 px-2 rounded-sm w-full bg-white break-words overflow-auto"
+          ></div>
         </div>
       </div>
     </section>
 
     {{! Button Section }}
     <section id="btn-section">
-      <div class="btn-div mt-6 text-center">
-        <button class="rounded-md px-5 py-2 convert-btn">Convert</button>
+      <div class="btn-div mt-8 text-center">
+        <button
+          class="rounded-md convert-btn w-full h-14 lg:w-24 lg:h-10"
+        >Convert</button>
       </div>
     </section>
   </div>

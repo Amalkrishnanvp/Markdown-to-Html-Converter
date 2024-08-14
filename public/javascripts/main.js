@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const convertBtn = document.querySelector(".convert-btn");
   const markdownHolder = document.querySelector("#markdown-holder");
+  const htmlShower = document.querySelector("#html-shower");
 
   // convert markdown to html
-  async function markdownToHtml(markdown) {
+  async function markdownToHtml(markdownText) {
     try {
       // request to convert markdown to html
       const response = await fetch("/htmlconvert", {
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ markdown }),
+        body: JSON.stringify({ markdown: markdownText }),
       });
 
       if (response.ok) {
@@ -22,17 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (error) {
       console.error("Error converting to HTML", error);
+      throw error;
     }
   }
 
   function displayHtml(data) {
-    console.log(data);
+    htmlShower.innerText = data.html;
   }
 
   convertBtn.addEventListener("click", () => {
     if (markdownHolder.value) {
-      const markdown = markdownHolder.value;
-      markdownToHtml(markdown);
+      const markdownText = markdownHolder.value;
+      markdownToHtml(markdownText);
     }
   });
 });

@@ -11,7 +11,8 @@
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "marked": "^14.0.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.10"
