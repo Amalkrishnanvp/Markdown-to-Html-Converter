@@ -29,9 +29,9 @@ This project aims to convert given markdown content into HTML content
 
 ### Essentials
 
-- Node.js
-- Git
-- A text editor (VS Code recommended)
+- [Node.js](https://nodejs.org/) for the JavaScript runtime environment.
+- [Git](https://git-scm.com/) for version control.
+- [Visual Studio Code](https://code.visualstudio.com/) for text editing. (Recommended)
 
 ### Steps
 
@@ -66,6 +66,13 @@ This project aims to convert given markdown content into HTML content
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- [Marked](https://github.com/markedjs/marked) for Markdown parsing.
+- [Express](https://expressjs.com/) for the server framework.
+- [Handlebars](https://handlebarsjs.com/) for templating.
+- [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 ## Contact
 
