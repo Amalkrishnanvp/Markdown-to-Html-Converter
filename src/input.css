@@ -6,3 +6,19 @@
   font-family: "Noto serif";
   font-size: 1rem;
 }
+body {
+  background-color: #0096c7;
+}
+textarea {
+  background-color: #fff;
+}
+.convert-btn {
+  background-color: #023047;
+  color: white;
+}
+.convert-btn:hover {
+  background-color: #064968;
+}
+#html-shower {
+  background-color: #faedcd;
+}
